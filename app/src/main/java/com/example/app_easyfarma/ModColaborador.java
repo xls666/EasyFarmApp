@@ -24,10 +24,11 @@ import java.util.Map;
 
 public class ModColaborador extends AppCompatActivity implements View.OnClickListener{
 
-    EditText etName, etPassword, etEmail, etPhone, etId;
+    EditText etProducto, etPrecio, etUbicacion, etId;
     Button btnCreate, btnFetch;
+    RequestQueue requestQueue;
 
-    private static final String URL ="save.php";
+    private static final String URL ="https://giancaproject1.000webhostapp.com/save.php";
 
     DrawerLayout drawerLayout;
 
@@ -35,6 +36,7 @@ public class ModColaborador extends AppCompatActivity implements View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mod_colaborador);
+        requestQueue = Volley.newRequestQueue(this);
 
         drawerLayout = findViewById(R.id.drawer_layout);
 
@@ -48,10 +50,10 @@ public class ModColaborador extends AppCompatActivity implements View.OnClickLis
     @SuppressLint("WrongViewCast")
     private void initUI() {
         //EditText
-        etName = findViewById(R.id.etName);
-        etPassword=findViewById(R.id.etPassword);
-        etEmail=findViewById(R.id.etEmail);
-        etPhone=findViewById(R.id.etPhone);
+        etProducto = findViewById(R.id.etProducto);
+        etPrecio=findViewById(R.id.etPrecio);
+        etUbicacion=findViewById(R.id.etUbicacion);
+
         etId=findViewById(R.id.etId);
 
         //Buttons
@@ -63,12 +65,11 @@ public class ModColaborador extends AppCompatActivity implements View.OnClickLis
         int id =v.getId();
 
         if (id == R.id.btnCreate) {
-            String name = etName.getText().toString().trim();
-            String email = etEmail.getText().toString().trim();
-            String password = etPassword.getText().toString().trim();
-            String phone = etPhone.getText().toString().trim();
+            String producto = etProducto.getText().toString().trim();
+            String precio = etPrecio.getText().toString().trim();
+            String ubicacion = etUbicacion.getText().toString().trim();
 
-            createUser(name, email, password, phone);
+            createUser(producto, precio, ubicacion);
         }else if (id == R.id.btnFetch){
 
             Intent intent =new Intent(this, ModColaborador_crud.class);
@@ -78,15 +79,15 @@ public class ModColaborador extends AppCompatActivity implements View.OnClickLis
 
     }
 
-    private void createUser(final String name, final String email, final String password, final String phone) {
-        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+    private void createUser(final String producto, final String precio, final String ubicacion) {
+
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
                 URL,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        Toast.makeText(ModColaborador.this, "Correcto", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ModColaborador.this, "Se registro el producto", Toast.LENGTH_SHORT).show();
                     }
                 },
                 new Response.ErrorListener() {
@@ -99,10 +100,10 @@ public class ModColaborador extends AppCompatActivity implements View.OnClickLis
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
-                params.put("name", name);
-                params.put("email", email);
-                params.put("password", password);
-                params.put("phone", phone);
+                params.put("producto", producto);
+                params.put("precio", precio);
+                params.put("ubicacion", ubicacion);
+
 
                 return params;
             }

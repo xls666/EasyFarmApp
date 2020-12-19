@@ -46,6 +46,7 @@ public class Login extends AppCompatActivity {
 
         button2 = (Button) findViewById(R.id.btn2);
         button2.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 RegistroCuenta();

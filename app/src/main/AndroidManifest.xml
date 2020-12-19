@@ -18,7 +18,6 @@
         <activity android:name=".DetallesProducto" />
         <activity android:name=".crearcuenta" />
         <activity android:name=".Login" />
-        <activity android:name=".AboutUs" />
         <activity android:name=".ModCliente" />
         <activity android:name=".MainActivity">
             <intent-filter>

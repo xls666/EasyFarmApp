@@ -48,6 +48,17 @@ public class crearcuenta extends AppCompatActivity {
         //Asignar variables
         drawerLayout =findViewById(R.id.drawer_layout);
 
+        //
+
+        button2 = (Button) findViewById(R.id.btnreturn);
+        button2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Login();
+            }
+        });
+
         button = (Button) findViewById(R.id.CrearCuenta);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,6 +67,11 @@ public class crearcuenta extends AppCompatActivity {
                 //CuentaCreada();
             }
         });
+    }
+
+    public void Login(){
+        Intent intent = new Intent(this,Login.class);
+        startActivity(intent);
     }
 
     public void ClickMenu(View view){

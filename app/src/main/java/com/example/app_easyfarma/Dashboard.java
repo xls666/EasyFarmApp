@@ -137,9 +137,7 @@ public class Dashboard extends AppCompatActivity {
         recreate();
     }
 
-    public void ClickAboutUs(View view){
-        MainActivity.redirectActivity(this,AboutUs.class);
-    }
+
 
     public void ClickLogout (View view){
         MainActivity.logout(this);

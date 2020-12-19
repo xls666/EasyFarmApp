@@ -20,7 +20,7 @@
 
 
         <EditText
-            android:id="@+id/etName"
+            android:id="@+id/etProducto"
             android:layout_width="342dp"
             android:layout_height="37dp"
             android:hint="Producto"
@@ -35,7 +35,7 @@
             app:layout_constraintVertical_bias="0.11" />
 
         <EditText
-            android:id="@+id/etEmail"
+            android:id="@+id/etPrecio"
             android:layout_width="342dp"
             android:layout_height="37dp"
             android:hint="Precio"
@@ -50,7 +50,7 @@
             app:layout_constraintVertical_bias="0.182" />
 
         <EditText
-            android:id="@+id/etPassword"
+            android:id="@+id/etUbicacion"
             android:layout_width="342dp"
             android:layout_height="37dp"
             android:hint="Ubicacion"
@@ -64,26 +64,16 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.265" />
 
-        <EditText
-            android:id="@+id/etPhone"
-            android:layout_width="342dp"
-            android:layout_height="37dp"
-            android:hint="Phone"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.492"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.361" />
 
         <Button
             android:id="@+id/btnCreate"
             android:layout_width="333dp"
             android:layout_height="47dp"
-            android:text="REGISTRAR"
+            android:text="Registrar Producto"
+            android:paddingTop="5dp"
+            android:paddingEnd="5dp"
+            android:textAlignment="gravity"
+            android:textStyle="normal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -106,7 +96,11 @@
                 android:layout_width="252dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="BUSCAR" />
+                android:text="Buscar Producto"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:textAlignment="gravity"
+                android:textStyle="normal"/>
 
             <EditText
                 android:id="@+id/etId"
