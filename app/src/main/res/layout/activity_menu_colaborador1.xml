@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".menu_colaborador1"
+    android:background="@color/colorPrimary"
+    android:paddingTop="50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MENU DE OPCIONES"
+        android:textAllCaps="true"
+        android:textColor="@color/md_white_1000"
+
+        android:textSize="40dp"
+        android:textStyle="italic"
+        android:fontFamily="casual"
+        android:layout_marginTop="20dp"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consultar producto en inventario"
+        android:textColor="@color/md_white_1000"
+        android:textStyle="normal"
+        android:textSize="20dp"
+        android:layout_marginTop="250dp"
+        ></TextView>
+
+    <Button
+        android:id="@+id/buscaproductocolab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:text="CONSULTAR PRODUCTO"
+        android:textStyle="italic"
+        android:fontFamily="casual"
+        ></Button>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Productos recurrentes"
+        android:textColor="@color/md_white_1000"
+        android:textStyle="normal"
+        android:textSize="20dp"
+        android:layout_marginTop="350dp"
+        ></TextView>
+
+    <Button
+        android:id="@+id/ver_prod_recurrentes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:text="Productos Recurrentes"
+        android:textStyle="italic"
+        android:fontFamily="casual"
+        ></Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registar Ubicación"
+        android:textColor="@color/md_white_1000"
+        android:textStyle="normal"
+        android:textSize="20dp"
+        android:layout_marginTop="450dp"
+        ></TextView>
+
+    <Button
+        android:id="@+id/mod_ubicacion_prod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
+        android:text="REGISTRAR UBICACIÓN PRODUCTO"
+        android:textStyle="italic"
+        android:fontFamily="casual"
+        ></Button>
+</RelativeLayout>

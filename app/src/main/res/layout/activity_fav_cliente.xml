@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="412dp"
+        android:layout_height="46dp"
+
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="FAVORITOS"
+        android:textColor="@color/md_white_1000"
+        android:textSize="40dp"
+        android:textStyle="italic"
+        android:fontFamily="casual"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="411dp"
+        android:layout_height="58dp"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="337dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="nombre 2"
+        android:background="@drawable/border_edittext"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="227dp" />
+
+    <EditText
+        android:background="@drawable/border_edittext"
+        android:id="@+id/editText8"
+        android:layout_width="337dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="nombre 3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="296dp" />
+
+    <EditText
+        android:background="@drawable/border_edittext"
+        android:id="@+id/editText4"
+        android:layout_width="337dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="nombre 4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="362dp" />
+
+    <EditText
+        android:background="@drawable/border_edittext"
+        android:id="@+id/editText6"
+        android:layout_width="337dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="nombre 1"
+        android:inputType="textPersonName"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="167dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="337dp"
+        android:layout_height="41dp"
+        android:background="#FFFFFF"
+        android:hint="Buscar"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="59dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">APP_EASYFARMA</string>
+
+    <string name="URL_USUARIOS">https://giancaproject1.000webhostapp.com/obtenerUsuarios.php</string>
+
+
+</resources>

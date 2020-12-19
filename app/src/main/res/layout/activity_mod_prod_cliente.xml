@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    >
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="412dp"
+        android:textStyle="italic"
+        android:fontFamily="casual"
+        android:layout_height="46dp"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+
+        android:text="DETALLES DE LA COMPRA"
+        android:textSize="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/editText5"
+        android:layout_width="411dp"
+        android:layout_height="58dp"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="259dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Precio"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/border_edittext"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="227dp" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="261dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:hint="Cantidad"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/border_edittext"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="296dp" />
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="261dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:hint="Ubicacion"
+        android:background="@drawable/border_edittext"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:text="Realziar Pago"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="400dp"
+        android:textStyle="italic"
+        android:fontFamily="casual"
+        android:background="@color/md_grey_700"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:text="Agregar Favorito"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="450dp"
+        android:textStyle="italic"
+        android:fontFamily="casual"
+        android:background="@color/md_grey_700"/>
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="258dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="nombre"
+        android:background="@drawable/border_edittext"
+        android:inputType="textPersonName"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="167dp" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView5"-->
+    <!--        android:layout_width="325dp"-->
+    <!--        android:layout_height="32dp"-->
+    <!--        android:background="#FFFFFF"-->
+    <!--        android:hint="Buscar Producto"-->
+    <!--        tools:layout_editor_absoluteX="27dp"-->
+    <!--        tools:layout_editor_absoluteY="59dp" />-->
+
+    <!--    <SearchView-->
+    <!--        android:layout_width="35dp"-->
+    <!--        android:layout_height="29dp"-->
+    <!--        tools:layout_editor_absoluteX="352dp"-->
+    <!--        tools:layout_editor_absoluteY="58dp" />-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

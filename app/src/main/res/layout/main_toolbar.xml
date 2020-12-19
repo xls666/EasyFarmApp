@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:onClick="ClickMenu"
+        android:src="@drawable/ic_menu" />
+
+    <TextView
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#8C9EFF"
+        android:text="EasyFarma"
+        android:textAlignment="center"
+        android:textColor="@color/md_blue_50"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Articulos" />
+
+</LinearLayout>
